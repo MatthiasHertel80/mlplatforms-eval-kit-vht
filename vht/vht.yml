@@ -13,7 +13,7 @@ suite:
 
   tests:
     - "run":
-       executable: ""‚
+       executable: ""
        arguments: "-V ../VSI/audio/python -f ./fvp_config.txt --stat --cyclelimit 768000000"
        pre: ""
        post: ""
