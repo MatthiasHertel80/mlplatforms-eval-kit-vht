@@ -1,0 +1,19 @@
+suite: 
+  name: "Arm ml-platforms evaluation kit"
+  model: "VHT-Corstone-300"
+  configuration: ""
+  working_dir: "/home/ubuntu/vhtwork"
+  pre: "./scripts/prep_env.sh"
+  post: ""
+
+  builds:
+    - "build_all":
+      shell: "cd ./ml-embedded-evaluation-kit/build/ && cmake ../"
+      post: "ls -la ./ml-embedded-evaluation-kit/build/"
+
+  tests:
+    - "run":
+      executable: ""
+      arguments: ""
+      pre: ""
+      post: ""
