@@ -8,8 +8,9 @@ suite:
 
   builds:
     - "buildall":
-       shell: "cd ./ml-embedded-evaluation-kit/build/ && cmake ../"
-       post: "cp -R ./ml-embedded-evaluation-kit/build/*.* ./out/"
+       shell: "cd ./ml-embedded-evaluation-kit/ &&  ./build_default.py --toolchain arm"
+       pre: "python3 ./set_up_default_resources.py"
+       post: "cp -R ./ml-embedded-evaluation-kit/*.* ./out/"
 
   tests:
     - "run":
