@@ -12,7 +12,7 @@ cd ml-embedded-evaluation-kit
 
 git submodule update --init
 
-python3 ./set_up_default_resources.py
+#python3 ./set_up_default_resources.py
 
 mkdir build 
 
