@@ -38,4 +38,3 @@ jobs:
            tar tvf  ${{ github.workspace }}/out.tar
            tar xvzf  ${{ github.workspace }}/out.tar
            ls -la ./home/ubuntu/vhtwork/out/
-.
