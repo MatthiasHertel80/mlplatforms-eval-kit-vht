@@ -38,3 +38,8 @@ jobs:
            tar tvf  ${{ github.workspace }}/out.tar
            tar xvzf  ${{ github.workspace }}/out.tar
            ls -la ./home/ubuntu/vhtwork/out/
+           
+      - name: Upload results
+        uses: actions/upload-artifact@v2
+        with:
+          path: ${{ github.workspace }}/out.tar
