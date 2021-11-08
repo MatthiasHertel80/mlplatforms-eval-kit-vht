@@ -7,13 +7,13 @@ suite:
   post: ""
 
   builds:
-    - "build_all":
-      shell: "cd ./ml-embedded-evaluation-kit/build/ && cmake ../"
-      post: "ls -la ./ml-embedded-evaluation-kit/build/"
+    - "buildall":
+       shell: "cd ./ml-embedded-evaluation-kit/build/ && cmake ../"
+       post: "ls -la ./ml-embedded-evaluation-kit/build/"
 
   tests:
     - "run":
-      executable: ""
-      arguments: ""
-      pre: ""
-      post: ""
+       executable: ""‚
+       arguments: "-V ../VSI/audio/python -f ./fvp_config.txt --stat --cyclelimit 768000000"
+       pre: ""
+       post: ""
