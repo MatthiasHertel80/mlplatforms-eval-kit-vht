@@ -9,7 +9,7 @@ suite:
   builds:
     - "buildall":
        shell: "cd ./ml-embedded-evaluation-kit/build/ && cmake ../"
-       post: "ls -la ./ml-embedded-evaluation-kit/build/"
+       post: "cp --parents 'find -name \*.axf*' ./out/"
 
   tests:
     - "run":
