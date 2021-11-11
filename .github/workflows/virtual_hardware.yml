@@ -42,4 +42,4 @@ jobs:
       - name: Upload results
         uses: actions/upload-artifact@v2
         with:
-          path: ${{ github.workspace }}/out.tar
+          path: ${{ github.workspace }}/home/ubuntu/vhtwork/out/**/*.axf
